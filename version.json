@@ -1,6 +1,6 @@
 {
-  "version": "2.5.6",
-  "min_required_version": "2.5.6",
+  "version": "2.6.0",
+  "min_required_version": "2.6.0",
   "download_url": "https://raw.githubusercontent.com/thkweon/jiraauto-release/main/update.zip",
-  "sha256": "B7008BFC113CCAE7527C3F681C9E7EDF2D9D421D2D6DB684AA8C262290660624"
+  "sha256": "EE31183CD8C07147BDA1ADFD047A7F9232D7740E3CB9624A220773F75E6F6021"
 }
