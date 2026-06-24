@@ -1,7 +1,7 @@
 {
-  "version": "2.9.1",
+  "version": "2.9.2",
   "download_url": "https://raw.githubusercontent.com/thkweon/jiraauto-release/main/update.zip",
-  "sha256": "8A989006264982877F6C4ECBFC322583A3C1763D56E17782818A1E6CCC985978",
+  "sha256": "48AB7B16A7684FB3AE7597518EF1B4A2A296AA122B25B42866561C6F5615F1DD",
   "updater_url": "https://raw.githubusercontent.com/thkweon/jiraauto-release/main/remote_update.bat",
   "updater_sha256": "5A7FC8FB143B8CAA579E6533499F9CF47CF784D8970C0E2BED6BCB308AA8CFFF"
 }
