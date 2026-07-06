@@ -1,7 +1,7 @@
 {
-  "version": "3.0.4",
+  "version": "3.0.5",
   "download_url": "https://raw.githubusercontent.com/thkweon/jiraauto-release/main/update.zip",
-  "sha256": "79C7EA814A93C9C07B33A594981F4C095005D27E3071FB4959D473C4A80DFEAC",
+  "sha256": "364DCBF8A7BC98564F30DCF21AE8B9379BCA75D6AD531FDBEE2C8452D738910D",
   "updater_url": "https://raw.githubusercontent.com/thkweon/jiraauto-release/main/remote_update.bat",
   "updater_sha256": "5A7FC8FB143B8CAA579E6533499F9CF47CF784D8970C0E2BED6BCB308AA8CFFF"
 }
