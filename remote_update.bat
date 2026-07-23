@@ -12,7 +12,7 @@ echo [1/8] Waiting for backend to gracefully exit...
 timeout /t 3 /nobreak > nul
 
 echo [2/8] Ensuring all dashboard processes are stopped...
-taskkill /F /IM python.exe /T 2>nul
+call :KillPortProcess 8000 python Backend
 taskkill /F /IM node.exe /T 2>nul
 
 echo [3/8] Preparing downloader...
@@ -138,4 +138,28 @@ move /Y "%VERSION_FILE%" version.json > nul
 
 echo Update applied successfully! Restarting dashboard...
 start "" "start_dashboard.vbs"
+exit /b 0
+
+:KillPortProcess
+set "PORT=%~1"
+set "EXPECTED_PROCESS=%~2"
+set "LABEL=%~3"
+
+echo [%LABEL%] Checking port %PORT%...
+powershell -NoProfile -ExecutionPolicy Bypass -Command ^
+  "$ErrorActionPreference = 'SilentlyContinue';" ^
+  "$connections = Get-NetTCPConnection -LocalPort %PORT% -State Listen -ErrorAction SilentlyContinue;" ^
+  "$processIds = @($connections | Select-Object -ExpandProperty OwningProcess -Unique);" ^
+  "if ($processIds.Count -eq 0) { Write-Host '[%LABEL%] No listening process found on port %PORT%.'; exit 0 }" ^
+  "foreach ($processId in $processIds) {" ^
+  "  $process = Get-Process -Id $processId;" ^
+  "  if ($null -eq $process) { continue }" ^
+  "  if ($process.ProcessName -notlike '%EXPECTED_PROCESS%*') {" ^
+  "    Write-Host ('[%LABEL%] Skipped PID ' + $processId + ' (' + $process.ProcessName + ') because it is not %EXPECTED_PROCESS%.');" ^
+  "    continue" ^
+  "  }" ^
+  "  Write-Host ('[%LABEL%] Stopping PID ' + $processId + ' (' + $process.ProcessName + ') on port %PORT%...');" ^
+  "  Stop-Process -Id $processId -Force" ^
+  "}"
+
 exit /b 0
