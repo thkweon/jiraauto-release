@@ -13,7 +13,7 @@ timeout /t 3 /nobreak > nul
 
 echo [2/8] Ensuring all dashboard processes are stopped...
 call :KillPortProcess 8000 python Backend
-taskkill /F /IM node.exe /T 2>nul
+call :KillPortProcess 5173 node Frontend
 
 echo [3/8] Preparing downloader...
 if exist "downloader.py" del "downloader.py"
