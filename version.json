@@ -5,6 +5,11 @@
       "version": "3.6.2",
       "download_url": "https://raw.githubusercontent.com/thkweon/jiraauto-release/main/stable/update.zip",
       "sha256": "B279281E3A7724903A3970731EB0FD33EAB56085010C4F07CE658F90B79B2F2A"
+    },
+    "beta": {
+      "version": "3.6.3-beta.1",
+      "download_url": "https://raw.githubusercontent.com/thkweon/jiraauto-release/main/beta/update.zip",
+      "sha256": "A7AF3397DA7CA44E1278E250BCEEEE831B52581DC7C393EE46E923D4483AC5C4"
     }
   },
   "updater_url": "https://raw.githubusercontent.com/thkweon/jiraauto-release/main/remote_update.bat",
