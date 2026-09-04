@@ -7,6 +7,9 @@ echo =========================================
 
 set "VERSION_URL=https://raw.githubusercontent.com/thkweon/jiraauto-release/main/version.json"
 set "VERSION_FILE=version_remote.json"
+set "UPDATE_CHANNEL=%~1"
+set "EXPECTED_VERSION=%~2"
+if /I not "%UPDATE_CHANNEL%"=="beta" set "UPDATE_CHANNEL=stable"
 
 echo [1/8] Waiting for backend to gracefully exit...
 timeout /t 3 /nobreak > nul
@@ -56,8 +59,26 @@ if not exist "%VERSION_FILE%" (
     exit /b 1
 )
 
-for /f "delims=" %%A in ('powershell -NoProfile -Command "if (Test-Path '%VERSION_FILE%') { (Get-Content '%VERSION_FILE%' -Raw | ConvertFrom-Json).download_url }"') do set "DOWNLOAD_URL=%%A"
-for /f "delims=" %%B in ('powershell -NoProfile -Command "if (Test-Path '%VERSION_FILE%') { (Get-Content '%VERSION_FILE%' -Raw | ConvertFrom-Json).sha256 }"') do set "EXPECTED_HASH=%%B"
+set "SELECTED_VERSION="
+set "SELECTED_CHANNEL="
+set "DOWNLOAD_URL="
+set "EXPECTED_HASH="
+if "%EXPECTED_VERSION%"=="" (
+    rem Legacy clients call the new updater without channel arguments. Keep their stable bridge path working.
+    for /f "delims=" %%A in ('powershell -NoProfile -Command "if (Test-Path '%VERSION_FILE%') { (Get-Content '%VERSION_FILE%' -Raw | ConvertFrom-Json).version }"') do set "SELECTED_VERSION=%%A"
+    for /f "delims=" %%A in ('powershell -NoProfile -Command "if (Test-Path '%VERSION_FILE%') { (Get-Content '%VERSION_FILE%' -Raw | ConvertFrom-Json).download_url }"') do set "DOWNLOAD_URL=%%A"
+    for /f "delims=" %%A in ('powershell -NoProfile -Command "if (Test-Path '%VERSION_FILE%') { (Get-Content '%VERSION_FILE%' -Raw | ConvertFrom-Json).sha256 }"') do set "EXPECTED_HASH=%%A"
+    set "SELECTED_CHANNEL=stable"
+) else (
+    for /f "tokens=1,* delims==" %%A in ('%PYTHON_EXE% backend\update_manifest.py select "%VERSION_FILE%" "%UPDATE_CHANNEL%" "%EXPECTED_VERSION%"') do set "%%A=%%B"
+)
+
+if "%SELECTED_VERSION%"=="" (
+    echo [ERROR] Failed to select a valid release for channel %UPDATE_CHANNEL%.
+    if exist "downloader.py" del "downloader.py"
+    timeout /t 10
+    exit /b 1
+)
 
 if "%DOWNLOAD_URL%"=="" (
     echo [ERROR] Failed to parse download_url.
@@ -133,8 +154,15 @@ if exist "frontend\package.json" (
 )
 
 echo [8/8] Finalizing update...
+"%PYTHON_EXE%" backend\update_manifest.py write-installed installed-version.json "%SELECTED_VERSION%" "%SELECTED_CHANNEL%"
+if errorlevel 1 (
+    echo [ERROR] Failed to record the installed version.
+    if exist "downloader.py" del "downloader.py"
+    timeout /t 10
+    exit /b 1
+)
+if exist "%VERSION_FILE%" del "%VERSION_FILE%"
 if exist "downloader.py" del "downloader.py"
-move /Y "%VERSION_FILE%" version.json > nul
 
 echo Update applied successfully! Restarting dashboard...
 start "" "start_dashboard.vbs"
