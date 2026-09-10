@@ -7,9 +7,9 @@
       "sha256": "5049F2D48F74F353B577530106135F21BBA21D4212EABB443DDE5E8BD0FBB62A"
     },
     "beta": {
-      "version": "3.6.5-beta.8",
+      "version": "3.6.5-beta.9",
       "download_url": "https://raw.githubusercontent.com/thkweon/jiraauto-release/main/beta/update.zip",
-      "sha256": "C7955E34FA6EA314C3DEF02AD1E46DC9B12D1C867903D39A1E44271B9FBF0734"
+      "sha256": "8CCCF5A16387DAFB9431DB5E4D0CCFAD785D81BC3F2EA6795C383592C60F6FAA"
     }
   },
   "updater_url": "https://raw.githubusercontent.com/thkweon/jiraauto-release/main/remote_update.bat",
