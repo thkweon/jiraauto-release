@@ -2,9 +2,9 @@
   "schema_version": 2,
   "channels": {
     "stable": {
-      "version": "3.6.9",
+      "version": "3.7.0",
       "download_url": "https://raw.githubusercontent.com/thkweon/jiraauto-release/main/stable/update.zip",
-      "sha256": "4A43A7F70C23509EA8CC4A2AADD1E2406BC5EEEFDCC481908088A92A50994443"
+      "sha256": "383899B22FDC2B78E7DB42088920E6FB6E9CE2DBF3490118B1D6423369DFEFCB"
     },
     "beta": {
       "version": "3.6.10-beta.1",
@@ -14,8 +14,7 @@
   },
   "updater_url": "https://raw.githubusercontent.com/thkweon/jiraauto-release/main/remote_update.bat",
   "updater_sha256": "F8BC24CCF9FA12E7A80FC1A6A41C877185CC20B3F29C8CCC6D500AE209DE9F48",
-  "version": "3.6.9",
+  "version": "3.7.0",
   "download_url": "https://raw.githubusercontent.com/thkweon/jiraauto-release/main/stable/update.zip",
-  "sha256": "4A43A7F70C23509EA8CC4A2AADD1E2406BC5EEEFDCC481908088A92A50994443",
-  "min_required_version": "3.6.9"
+  "sha256": "383899B22FDC2B78E7DB42088920E6FB6E9CE2DBF3490118B1D6423369DFEFCB"
 }
