@@ -8,10 +8,10 @@
       "release_notes": "jira 상세 이슈 기능 확장 및 릴리즈 노트 확인 기능 추가"
     },
     "beta": {
-      "version": "3.7.3-beta.3",
+      "version": "3.7.4-beta.1",
       "download_url": "https://raw.githubusercontent.com/thkweon/jiraauto-release/main/beta/update.zip",
-      "sha256": "902204DC675CF9840B2433F68B1513012A8E69516F8577E4E9DCF06837291C1A",
-      "release_notes": "릴리즈 노트 확인 기능 추가"
+      "sha256": "790F432459E8371B864258C950E2CD0D8D79B0377670E9E775061F546A338EF5",
+      "release_notes": "베타 미사용 시 릴리즈 노트 개선"
     }
   },
   "updater_url": "https://raw.githubusercontent.com/thkweon/jiraauto-release/main/remote_update.bat",
