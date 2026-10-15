@@ -2,9 +2,10 @@
   "schema_version": 2,
   "channels": {
     "stable": {
-      "version": "3.7.2",
+      "version": "3.7.3",
       "download_url": "https://raw.githubusercontent.com/thkweon/jiraauto-release/main/stable/update.zip",
-      "sha256": "3FF68C75E862995217B924ABF5A9756F95B19E63156797C4AEF3FB8108173041"
+      "sha256": "A9F807C3371DACB15C61576A52170130F4C5BA2077BC04ADFD5F96CF6DD4CCA3",
+      "release_notes": "jira 상세 이슈 기능 확장 및 릴리즈 노트 확인 기능 추가"
     },
     "beta": {
       "version": "3.7.3-beta.3",
@@ -15,8 +16,8 @@
   },
   "updater_url": "https://raw.githubusercontent.com/thkweon/jiraauto-release/main/remote_update.bat",
   "updater_sha256": "F8BC24CCF9FA12E7A80FC1A6A41C877185CC20B3F29C8CCC6D500AE209DE9F48",
-  "version": "3.7.2",
+  "version": "3.7.3",
   "download_url": "https://raw.githubusercontent.com/thkweon/jiraauto-release/main/stable/update.zip",
-  "sha256": "3FF68C75E862995217B924ABF5A9756F95B19E63156797C4AEF3FB8108173041",
-  "min_required_version": "3.7.2"
+  "sha256": "A9F807C3371DACB15C61576A52170130F4C5BA2077BC04ADFD5F96CF6DD4CCA3",
+  "min_required_version": "3.7.3"
 }
