@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "channel": "beta",
+  "releases": [
+    {
+      "version": "3.7.3-beta.3",
+      "released_at": "2026-10-15T09:09:48+09:00",
+      "title": "릴리즈 노트 확인 기능 추가",
+      "notes": "릴리즈 노트 확인 기능 추가"
+    }
+  ]
+}
