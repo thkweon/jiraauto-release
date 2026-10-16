@@ -8,10 +8,10 @@
       "release_notes": "jira 상세 이슈 기능 확장 및 릴리즈 노트 확인 기능 추가"
     },
     "beta": {
-      "version": "3.7.4-beta.1",
+      "version": "3.7.4-beta.2",
       "download_url": "https://raw.githubusercontent.com/thkweon/jiraauto-release/main/beta/update.zip",
-      "sha256": "790F432459E8371B864258C950E2CD0D8D79B0377670E9E775061F546A338EF5",
-      "release_notes": "베타 미사용 시 릴리즈 노트 개선"
+      "sha256": "A46453F0E8BF66096A27EF181153DD20DA661DFDFA1D283685C7A8DF35518EE4",
+      "release_notes": "jira 이슈 상세 정보 모달의 자신의 코멘트 풍선의 첨부파일 링크 표시 규칙 변경"
     }
   },
   "updater_url": "https://raw.githubusercontent.com/thkweon/jiraauto-release/main/remote_update.bat",
