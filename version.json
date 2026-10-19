@@ -8,14 +8,14 @@
       "release_notes": "jira \uc0c1\uc138 \uc774\uc288 \uae30\ub2a5 \ud655\uc7a5 \ubc0f \ub9b4\ub9ac\uc988 \ub178\ud2b8 \ud655\uc778 \uae30\ub2a5 \ucd94\uac00"
     },
     "beta": {
-      "version": "3.7.4-beta.6",
+      "version": "3.7.4-beta.7",
       "download_url": "https://raw.githubusercontent.com/thkweon/jiraauto-release/main/beta/update.zip",
-      "sha256": "D59B9E8A3096AF07A9DA6D7670749E5832D52F016DA76EAF58F57CC6D3C5B8CB",
-      "release_notes": "\ubc30\ud3ec\ud14c\uc2a4\ud2b8"
+      "sha256": "44BDC24C7B7F30C78ACDBA5BC546B5F354A09F48735135FFADB14884868A6940",
+      "release_notes": "\uc5c5\ub370\uc774\ud2b8\u00b7\ubc31\uc5c5 \ud328\ud0a4\uc9c0 \uac1c\uc120"
     }
   },
   "updater_url": "https://raw.githubusercontent.com/thkweon/jiraauto-release/main/remote_update.bat",
-  "updater_sha256": "6C946C6E030492D15004078E9D17E986023B83B3CE8A46DB767F85676A488031",
+  "updater_sha256": "31F76815FB87E08C15D3F6309BEE9C71D86E7A4DD5DF6D7939AEAA3FDC10FA20",
   "version": "3.7.3",
   "download_url": "https://raw.githubusercontent.com/thkweon/jiraauto-release/main/stable/update.zip",
   "sha256": "A9F807C3371DACB15C61576A52170130F4C5BA2077BC04ADFD5F96CF6DD4CCA3",
