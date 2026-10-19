@@ -3,28 +3,34 @@
   "channel": "beta",
   "releases": [
     {
+      "version": "3.7.4-beta.4",
+      "released_at": "2026-10-19T09:11:46+09:00",
+      "title": "\uc5c5\ub370\uc774\ud2b8 \ub2e4\uc6b4\ub85c\ub4dc \uc624\ub958 \uc218\uc815",
+      "notes": "- Windows \ud658\uacbd\uc5d0\uc11c \uc5c5\ub370\uc774\ud2b8 \uc815\ubcf4\uc758 \uc5c5\ub370\uc774\ud130 URL\uc744 \uc77d\uc9c0 \ubabb\ud574 \ub2e4\uc6b4\ub85c\ub4dc\uac00 \uc2e4\ud328\ud558\ub294 \ubb38\uc81c\ub97c \uc218\uc815\ud588\uc2b5\ub2c8\ub2e4.\n - \uba54\ud0c0\ub370\uc774\ud130\ub97c \ub354 \uc548\uc815\uc801\uc73c\ub85c \uc77d\ub3c4\ub85d \uac1c\uc120\ud558\uace0, \uc720\ud6a8\ud558\uc9c0 \uc54a\uc740 \ub2e4\uc6b4\ub85c\ub4dc \uc8fc\uc18c\ub294 \uc0ac\uc804\uc5d0 \ud655\uc778\ud558\ub3c4\ub85d \ud588\uc2b5\ub2c8\ub2e4.\n - \ub9b4\ub9ac\uc988 \uc815\ubcf4\uc5d0 \ud55c\uae00\uc774 \ud3ec\ud568\ub41c \uacbd\uc6b0\uc5d0\ub3c4 Windows\uc5d0\uc11c \uc815\uc0c1\uc801\uc73c\ub85c \ucc98\ub9ac\ub418\ub3c4\ub85d \uac1c\uc120\ud588\uc2b5\ub2c8\ub2e4."
+    },
+    {
       "version": "3.7.4-beta.3",
       "released_at": "2026-10-19T09:01:56+09:00",
-      "title": "업데이트 실패 버전 test",
-      "notes": "업데이트 되지 않는 현상 확인 후 test"
+      "title": "\uc5c5\ub370\uc774\ud2b8 \uc2e4\ud328 \ubc84\uc804 test",
+      "notes": "\uc5c5\ub370\uc774\ud2b8 \ub418\uc9c0 \uc54a\ub294 \ud604\uc0c1 \ud655\uc778 \ud6c4 test"
     },
     {
       "version": "3.7.4-beta.2",
       "released_at": "2026-10-16T15:45:51+09:00",
-      "title": "jira 이슈 상세 정보 모달의 자신의 코멘트 풍선의 첨부파일 링크 표시 규칙 변경",
-      "notes": "이슈 상세 정보 모달 스타일 변경\n - 자신이 작성한 코멘트 풍선의 배경색과 하이퍼링크의 스타일이 같아 보이지 않는 현상 확인하여 하늘색으로 변경"
+      "title": "jira \uc774\uc288 \uc0c1\uc138 \uc815\ubcf4 \ubaa8\ub2ec\uc758 \uc790\uc2e0\uc758 \ucf54\uba58\ud2b8 \ud48d\uc120\uc758 \ucca8\ubd80\ud30c\uc77c \ub9c1\ud06c \ud45c\uc2dc \uaddc\uce59 \ubcc0\uacbd",
+      "notes": "\uc774\uc288 \uc0c1\uc138 \uc815\ubcf4 \ubaa8\ub2ec \uc2a4\ud0c0\uc77c \ubcc0\uacbd\n - \uc790\uc2e0\uc774 \uc791\uc131\ud55c \ucf54\uba58\ud2b8 \ud48d\uc120\uc758 \ubc30\uacbd\uc0c9\uacfc \ud558\uc774\ud37c\ub9c1\ud06c\uc758 \uc2a4\ud0c0\uc77c\uc774 \uac19\uc544 \ubcf4\uc774\uc9c0 \uc54a\ub294 \ud604\uc0c1 \ud655\uc778\ud558\uc5ec \ud558\ub298\uc0c9\uc73c\ub85c \ubcc0\uacbd"
     },
     {
       "version": "3.7.4-beta.1",
       "released_at": "2026-10-15T09:50:26+09:00",
-      "title": "베타 미사용 시 릴리즈 노트 개선",
-      "notes": "베타 미사용 시 릴리즈 노트에서 베타 관련 기능 제거"
+      "title": "\ubca0\ud0c0 \ubbf8\uc0ac\uc6a9 \uc2dc \ub9b4\ub9ac\uc988 \ub178\ud2b8 \uac1c\uc120",
+      "notes": "\ubca0\ud0c0 \ubbf8\uc0ac\uc6a9 \uc2dc \ub9b4\ub9ac\uc988 \ub178\ud2b8\uc5d0\uc11c \ubca0\ud0c0 \uad00\ub828 \uae30\ub2a5 \uc81c\uac70"
     },
     {
       "version": "3.7.3-beta.3",
       "released_at": "2026-10-15T09:09:48+09:00",
-      "title": "릴리즈 노트 확인 기능 추가",
-      "notes": "릴리즈 노트 확인 기능 추가"
+      "title": "\ub9b4\ub9ac\uc988 \ub178\ud2b8 \ud655\uc778 \uae30\ub2a5 \ucd94\uac00",
+      "notes": "\ub9b4\ub9ac\uc988 \ub178\ud2b8 \ud655\uc778 \uae30\ub2a5 \ucd94\uac00"
     }
   ]
 }

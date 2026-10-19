@@ -5,13 +5,13 @@
       "version": "3.7.3",
       "download_url": "https://raw.githubusercontent.com/thkweon/jiraauto-release/main/stable/update.zip",
       "sha256": "A9F807C3371DACB15C61576A52170130F4C5BA2077BC04ADFD5F96CF6DD4CCA3",
-      "release_notes": "jira 상세 이슈 기능 확장 및 릴리즈 노트 확인 기능 추가"
+      "release_notes": "jira \uc0c1\uc138 \uc774\uc288 \uae30\ub2a5 \ud655\uc7a5 \ubc0f \ub9b4\ub9ac\uc988 \ub178\ud2b8 \ud655\uc778 \uae30\ub2a5 \ucd94\uac00"
     },
     "beta": {
-      "version": "3.7.4-beta.3",
+      "version": "3.7.4-beta.4",
       "download_url": "https://raw.githubusercontent.com/thkweon/jiraauto-release/main/beta/update.zip",
-      "sha256": "8D33349863B8F2633AD294773F78AAC3293DA3E29D856DB5BE8538DCF4ECDA92",
-      "release_notes": "업데이트 실패 버전 test"
+      "sha256": "57446E707E9817C8EC98D2C3CAFB1AF85B73890EAF025523178106CFC6A9B9C2",
+      "release_notes": "\uc5c5\ub370\uc774\ud2b8 \ub2e4\uc6b4\ub85c\ub4dc \uc624\ub958 \uc218\uc815"
     }
   },
   "updater_url": "https://raw.githubusercontent.com/thkweon/jiraauto-release/main/remote_update.bat",
