@@ -50,9 +50,9 @@ if "%PYTHON_EXE%"=="" (
 )
 
 echo [4/8] Reading release metadata...
-if not exist "%VERSION_FILE%" (
-    "%PYTHON_EXE%" downloader.py "%VERSION_URL%" "%VERSION_FILE%"
-)
+rem Always fetch fresh metadata; a bootstrap from an older release may have saved a CDN-cached copy.
+if exist "%VERSION_FILE%" del "%VERSION_FILE%"
+"%PYTHON_EXE%" downloader.py "%VERSION_URL%" "%VERSION_FILE%"
 if not exist "%VERSION_FILE%" (
     echo [ERROR] Failed to download version metadata.
     if exist "downloader.py" del "downloader.py"

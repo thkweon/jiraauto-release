@@ -3,6 +3,12 @@
   "channel": "beta",
   "releases": [
     {
+      "version": "3.7.4-beta.6",
+      "released_at": "2026-10-19T09:34:49+09:00",
+      "title": "\ubc30\ud3ec\ud14c\uc2a4\ud2b8",
+      "notes": "\uc5c5\ub370\uc774\ud2b8\u00b7\ubc31\uc5c5 \ud328\ud0a4\uc9c0 \uac1c\uc120"
+    },
+    {
       "version": "3.7.4-beta.5",
       "released_at": "2026-10-19T09:23:56+09:00",
       "title": "\uc5c5\ub370\uc774\ud2b8\u00b7\ubc31\uc5c5 \ud328\ud0a4\uc9c0 \uac1c\uc120",
