@@ -3,6 +3,12 @@
   "channel": "beta",
   "releases": [
     {
+      "version": "3.7.4-beta.3",
+      "released_at": "2026-10-19T09:01:56+09:00",
+      "title": "업데이트 실패 버전 test",
+      "notes": "업데이트 되지 않는 현상 확인 후 test"
+    },
+    {
       "version": "3.7.4-beta.2",
       "released_at": "2026-10-16T15:45:51+09:00",
       "title": "jira 이슈 상세 정보 모달의 자신의 코멘트 풍선의 첨부파일 링크 표시 규칙 변경",
