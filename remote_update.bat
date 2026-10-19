@@ -5,7 +5,8 @@ echo =========================================
 echo Jira Dashboard Remote Updater
 echo =========================================
 
-set "VERSION_URL=https://raw.githubusercontent.com/thkweon/jiraauto-release/main/version.json"
+rem Cache-bust GitHub raw CDN so the updater sees the same release the app validated.
+set "VERSION_URL=https://raw.githubusercontent.com/thkweon/jiraauto-release/main/version.json?t=%RANDOM%%RANDOM%%RANDOM%"
 set "VERSION_FILE=version_remote.json"
 set "UPDATE_CHANNEL=%~1"
 set "EXPECTED_VERSION=%~2"
@@ -75,7 +76,9 @@ if "%EXPECTED_VERSION%"=="" (
 
 if "%SELECTED_VERSION%"=="" (
     echo [ERROR] Failed to select a valid release for channel %UPDATE_CHANNEL%.
+    echo Restarting the existing dashboard after update validation failed...
     if exist "downloader.py" del "downloader.py"
+    if exist "start_dashboard.vbs" start "" "start_dashboard.vbs"
     timeout /t 10
     exit /b 1
 )
