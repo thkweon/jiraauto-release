@@ -3,6 +3,12 @@
   "channel": "beta",
   "releases": [
     {
+      "version": "3.7.7-beta.2",
+      "released_at": "2026-10-22T13:19:25+09:00",
+      "title": "\uc2e0\uaddc \ud65c\ub3d9 \ubc43\uc9c0 \ud074\ub9ad \uc2dc \ud2f0\ucf13\uc73c\ub85c \uc774\ub3d9",
+      "notes": "- \ub0b4 \uc5c5\ubb34, \uba58\uc158\ub41c \uc5c5\ubb34, \ubcf4\uace0\ud55c \uc5c5\ubb34\uc758 \uc2e0\uaddc \ud65c\ub3d9 \uc22b\uc790 \ubc43\uc9c0\ub97c \ud074\ub9ad\ud558\uba74 \ud574\ub2f9 \uc601\uc5ed\uc5d0\uc11c \ub9e5\ub3d9 \uc911\uc778 \uccab \ubc88\uc9f8 \ud2f0\ucf13\uc73c\ub85c \ubd80\ub4dc\ub7fd\uac8c \uc774\ub3d9\ud569\ub2c8\ub2e4."
+    },
+    {
       "version": "3.7.7-beta.1",
       "released_at": "2026-10-22T08:52:28+09:00",
       "title": "\uac1c\uc778 \ud604\ud669\ud310 \uc804\uccb4 \uae30\uac04 \ud2f0\ucf13 \ub204\ub77d \uc218\uc815",

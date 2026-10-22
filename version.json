@@ -8,10 +8,10 @@
       "release_notes": "\ucf54\uba58\ud2b8 \uacf5\uac1c \ubc94\uc704 \uc120\ud0dd \ubaa9\ub85d \uac1c\uc120"
     },
     "beta": {
-      "version": "3.7.7-beta.1",
+      "version": "3.7.7-beta.2",
       "download_url": "https://raw.githubusercontent.com/thkweon/jiraauto-release/main/beta/update.zip",
-      "sha256": "428F03EA89DD561FB8B4271411D8C72A32C0FE00D78A65F2142651BC403311A9",
-      "release_notes": "\uac1c\uc778 \ud604\ud669\ud310 \uc804\uccb4 \uae30\uac04 \ud2f0\ucf13 \ub204\ub77d \uc218\uc815"
+      "sha256": "6139B28E6EF5B264B9499D53FDF56D38A851E3EEA11CDE6892229D9EC7AE68BE",
+      "release_notes": "\uc2e0\uaddc \ud65c\ub3d9 \ubc43\uc9c0 \ud074\ub9ad \uc2dc \ud2f0\ucf13\uc73c\ub85c \uc774\ub3d9"
     }
   },
   "updater_url": "https://raw.githubusercontent.com/thkweon/jiraauto-release/main/remote_update.bat",
