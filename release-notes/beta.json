@@ -3,6 +3,12 @@
   "channel": "beta",
   "releases": [
     {
+      "version": "3.7.8-beta.1",
+      "released_at": "2026-11-05T09:25:54+09:00",
+      "title": "\uc790\ub3d9\ud654 \uc124\uc815 \uc800\uc7a5 \uc0c1\ud0dc \ud45c\uc2dc \uac1c\uc120",
+      "notes": "- \uc790\ub3d9\ud654 \uc124\uc815 \uc800\uc7a5 \uc911 \ubc84\ud2bc\uc5d0 \uc9c4\ud589 \uc0c1\ud0dc\ub97c \ud45c\uc2dc\ud558\uace0, \uc911\ubcf5 \uc800\uc7a5\uc744 \ubc29\uc9c0\ud558\ub3c4\ub85d \uac1c\uc120\ud588\uc2b5\ub2c8\ub2e4."
+    },
+    {
       "version": "3.7.7-beta.4",
       "released_at": "2026-10-28T07:26:38+09:00",
       "title": "AI \uc124\uc815 API \ud0a4 \uc785\ub825 \uad6c\uc870 \uac1c\uc120",
